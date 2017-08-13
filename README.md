@@ -16,4 +16,4 @@ This app has been tested on Redmi 3s prime API 23.
   <img width = '200' height = '300' src = 'https://github.com/kushagrasaxenaknit/Vidyaroha/blob/master/Screenshot_2017-08-13-12-11-27-303_com.example.kushagra.vidyaroha.png'/>
   
  </p><br>
-Download Demo Version <a href = 'https://github.com/kushagrasaxenaknit/Vidyaroha/blob/master/app-debug.apk'>here </a>
+Download Demo Version <a href = 'https://github.com/kushagrasaxenaknit/Vidyaroha/blob/master/Vidyaroha_com.example.kushagra.vidyaroha.apk'>here </a>
