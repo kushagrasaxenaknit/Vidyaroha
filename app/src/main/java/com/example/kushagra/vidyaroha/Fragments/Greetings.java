@@ -140,7 +140,7 @@ public class Greetings extends Fragment {
 
         float dayCount = (float) diff / (24 * 60 * 60 * 1000);
 
-        return ("" + ((int) dayCount ));
+        return ("" + ((int) dayCount+1 ));
     }
 
 

@@ -76,6 +76,7 @@ public class TakePhoto extends Fragment  implements PermissionCallback {
             public void onClick(View view) {
                 Intent intent;
                 intent = new Intent(getContext(), SelectImageActivity.class);
+                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 startActivityForResult(intent, REQUEST_SELECT_IMAGE);
                 imageFromOne=true;
             }
@@ -85,7 +86,9 @@ public class TakePhoto extends Fragment  implements PermissionCallback {
             public void onClick(View view) {
                 imageFromOne=false;
                 Intent intent;
+
                 intent = new Intent(getContext(), SelectImageActivity.class);
+                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 startActivityForResult(intent, REQUEST_SELECT_IMAGE);
             }
         });
@@ -180,6 +183,8 @@ public class TakePhoto extends Fragment  implements PermissionCallback {
     private void listAllFiles(String path) {
 
         File[] files = new File(path).listFiles();
+        this.urls1 = new ArrayList();
+
         if (files != null) {
 
             for (File f : files) {
@@ -204,6 +209,8 @@ public class TakePhoto extends Fragment  implements PermissionCallback {
     private void listAllFiles2(String path) {
 
         File[] files = new File(path).listFiles();
+
+        this.urls2 = new ArrayList();
         if (files != null) {
 
             for (File f : files) {
